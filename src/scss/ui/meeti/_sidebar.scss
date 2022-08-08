@@ -1,0 +1,15 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    &__contenido {
+        background-color: v.$secundario;
+        text-align: center;
+    }
+    &__heading,
+    &__informacion {
+        @include m.texto;
+    }
+}
